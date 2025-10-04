@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationExerciseSuite">
+    <test name="AutomationExerciseTests">
+        <classes>
+            <!-- Test Case 1: Register User -->
+            <class name="com.AutomationExercise.Tests.TC01_RegisterUser" />
+
+            <!-- Test Case 2: Login User with Correct Credentials -->
+            <class name="com.AutomationExercise.Tests.TC02_LoginUser" />
+            
+            <!-- Test Case 2: Login User with Correct IncorrectCredentials -->
+            <class name="com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials" />
+            
+        </classes>
+    </test>
+</suite>
