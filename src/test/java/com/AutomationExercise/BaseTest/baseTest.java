@@ -3,6 +3,7 @@ package com.AutomationExercise.BaseTest;
 import com.AutomationExercrise.utils.Constants;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -31,9 +32,11 @@ public class baseTest {
     protected static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
     private static String reportPath;
 
-    // ✅ SLF4J Logger
+    // SLF4J Logger
     protected static final Logger log = LoggerFactory.getLogger(baseTest.class);
 
+   
+    //Initialize ExtentReports
     @BeforeSuite(alwaysRun = true)
     public void setupReport() throws IOException {
         log.info("Initializing ExtentReports and cleaning old reports/screenshots");
@@ -62,10 +65,12 @@ public class baseTest {
         }
     }
 
+   
+    // Launch Browser
     @BeforeClass(alwaysRun = true)
     public void setUp() {
         String browser = System.getProperty("browser", "chrome");
-        log.info("Launching browser: {}", browser);
+        logStep("Launching browser: " + browser);
         switch (browser.toLowerCase()) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
@@ -76,65 +81,74 @@ public class baseTest {
                 driver = new EdgeDriver();
                 break;
             default:
-                log.error("Unsupported browser: {}", browser);
+                logStep("Unsupported browser: " + browser);
                 throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
 
         driver.manage().window().maximize();
         driver.get(Constants.BASE_URL);
         wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.DEFAULT_WAIT));
-        log.info("Navigated to {}", Constants.BASE_URL);
+        logStep("Navigated to " + Constants.BASE_URL);
     }
 
+  
+    //  Start Test Logging
     @BeforeMethod(alwaysRun = true)
     public void startTest(Method method) {
         test.set(extent.createTest(getClass().getSimpleName() + " :: " + method.getName()));
-        log.info("Starting test: {}", method.getName());
+        logStep("Starting test: " + method.getName());
     }
 
+   
+    //  Capture Test Result
     @AfterMethod(alwaysRun = true)
     public void captureResult(ITestResult result) {
         ExtentTest currentTest = test.get();
 
         if (result.getStatus() == ITestResult.FAILURE) {
-            log.error("Test FAILED: {}", result.getName(), result.getThrowable());
-            currentTest.fail("❌ Test Failed: " + result.getThrowable());
+            logStep("Test FAILED: " + result.getName() + " - " + result.getThrowable());
 
             File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             String screenshotPath = "screenshots/" + result.getName() + "_" + System.currentTimeMillis() + ".png";
             try {
                 FileUtils.copyFile(src, new File(screenshotPath));
-                currentTest.addScreenCaptureFromPath("../" + screenshotPath);
-                log.info("Screenshot captured at {}", screenshotPath);
+                currentTest.fail("❌ Test Failed: " + result.getThrowable(),
+                        MediaEntityBuilder.createScreenCaptureFromPath("../" + screenshotPath).build());
             } catch (IOException e) {
                 log.error("Failed to save screenshot", e);
             }
 
         } else if (result.getStatus() == ITestResult.SUCCESS) {
-            log.info("Test PASSED: {}", result.getName());
+            logStep("Test PASSED: " + result.getName());
             currentTest.pass("✅ Test Passed");
         } else if (result.getStatus() == ITestResult.SKIP) {
-            log.warn("Test SKIPPED: {}", result.getName(), result.getThrowable());
+            logStep("Test SKIPPED: " + result.getName() + " - " + result.getThrowable());
             currentTest.skip("⚠️ Test Skipped: " + result.getThrowable());
         }
     }
 
+   
+    // Close Browser
     @AfterClass(alwaysRun = true)
     public void tearDown() {
         if (driver != null) {
             driver.quit();
-            log.info("Browser closed");
+            logStep("Browser closed");
         }
     }
 
+   
+    // Flush Extent Report
     @AfterSuite(alwaysRun = true)
     public void flushReport() {
         if (extent != null) {
             extent.flush();
-            log.info("Extent Report generated at {}", reportPath);
+            logStep("Extent Report generated at " + reportPath);
         }
     }
 
+    
+    //  Utility: Clean directories
     private void cleanDirectory(String folderName) throws IOException {
         File dir = new File(folderName);
         if (dir.exists()) {
@@ -143,6 +157,35 @@ public class baseTest {
         } else {
             dir.mkdir();
             log.info("Created directory: {}", folderName);
+        }
+    }
+
+  
+    //  Utility: Log step in both Console & ExtentReports
+    protected void logStep(String message) {
+        // Console log
+        log.info(message);
+        // ExtentReports log
+        if (test.get() != null) {
+            test.get().info(message);
+        }
+    }
+
+  
+    //  Optional: Log step with screenshot
+    protected void logStepWithScreenshot(String message) {
+        log.info(message);
+
+        if (test.get() != null && driver != null) {
+            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            String path = "screenshots/" + System.currentTimeMillis() + ".png";
+            try {
+                FileUtils.copyFile(src, new File(path));
+                test.get().info(message,
+                        MediaEntityBuilder.createScreenCaptureFromPath("../" + path).build());
+            } catch (IOException e) {
+                log.error("Failed to save screenshot", e);
+            }
         }
     }
 }
