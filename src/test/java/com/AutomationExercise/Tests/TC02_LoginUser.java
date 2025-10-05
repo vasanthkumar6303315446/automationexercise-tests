@@ -3,7 +3,6 @@ package com.AutomationExercise.Tests;
 import com.AutomationExercise.BaseTest.baseTest;
 import com.AutomationExercise.Page.*;
 import com.AutomationExercrise.utils.Constants;
-
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -18,41 +17,65 @@ public class TC02_LoginUser extends baseTest {
     @BeforeMethod
     public void setupWait() {
         wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.DEFAULT_WAIT));
+        log.info("WebDriverWait initialized with {} seconds", Constants.DEFAULT_WAIT);
     }
 
     @Test(priority = 2, groups = {"smoke"})
-    // Optional dependency: Uncomment if you want this to run after registration
-    // @Test(priority = 2, groups = {"smoke"}, dependsOnMethods = {"com.AutomationExercise.Tests.TC01_RegisterUser.registerUserTest"})
     public void loginUserTest() {
         HomePage home = new HomePage(driver, wait);
         LoginPage loginPage = new LoginPage(driver, wait);
         AccountCreatedPage accountPage = new AccountCreatedPage(driver, wait);
 
-        // Launch browser and verify homepage
-        driver.get(Constants.BASE_URL);
-        Assert.assertTrue(home.isHomePageVisible(), "Home page is not visible");
-
-        // Click Signup/Login and verify login section
-        home.clickSignupLogin();
-        Assert.assertTrue(loginPage.isLoginVisible(), "Login to your account section not visible");
-
-        // Enter correct email and password and click login
         String email = "katikutivasanthkumar6622@gmail.com";
         String password = "Vasanth@1";
         String expectedUsername = "vasanth";
 
-        loginPage.enterEmail(email);
-        loginPage.enterPassword(password);
-        loginPage.clickLogin();
+        try {
+            log.info("Navigating to homepage: {}", Constants.BASE_URL);
+            test.get().info("Navigating to homepage");
+            driver.get(Constants.BASE_URL);
+            Assert.assertTrue(home.isHomePageVisible(), "Home page is not visible");
+            log.info("Homepage is visible");
 
-        // Verify logged in as username
-        Assert.assertTrue(home.isLoggedIn(expectedUsername), "User is not logged in");
+            // Navigate to login
+            home.clickSignupLogin();
+            test.get().info("Clicked Signup/Login button");
+            log.info("Clicked Signup/Login");
 
-        // Delete account
-        home.clickDeleteAccount();
+            Assert.assertTrue(loginPage.isLoginVisible(), "Login section not visible");
+            log.info("Login section is visible");
 
-        // Verify account deleted
-        Assert.assertTrue(accountPage.isAccountDeletedVisible(), "Account deletion confirmation not visible");
-        accountPage.clickContinueAfterDelete();
+            // Enter credentials
+            loginPage.enterEmail(email);
+            loginPage.enterPassword(password);
+            test.get().info("Entered login credentials");
+            log.info("Entered email: {} and password: {}", email, "********");
+
+            loginPage.clickLogin();
+            test.get().info("Clicked Login button");
+            log.info("Clicked Login");
+
+            // Verify logged in
+            Assert.assertTrue(home.isLoggedIn(expectedUsername), "User is not logged in");
+            test.get().pass("User logged in successfully as " + expectedUsername);
+            log.info("User logged in successfully as {}", expectedUsername);
+
+            // Delete account
+            home.clickDeleteAccount();
+            test.get().info("Clicked Delete Account button");
+            log.info("Clicked Delete Account");
+
+            Assert.assertTrue(accountPage.isAccountDeletedVisible(), "Account deletion confirmation not visible");
+            test.get().pass("Account deleted successfully");
+            log.info("Account deleted successfully");
+
+            accountPage.clickContinueAfterDelete();
+            log.info("Clicked Continue after deletion");
+
+        } catch (Exception e) {
+            log.error("Exception in loginUserTest", e);
+            test.get().fail("Test failed due to exception: " + e.getMessage());
+            throw e;
+        }
     }
 }
