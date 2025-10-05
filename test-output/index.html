@@ -148,38 +148,15 @@
                   <a name="loginUserTest">
                   </a> <!-- loginUserTest -->
                   <span class="method-name">loginUserTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(text(),&apos;Logged in as&apos;)] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\sree\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56488/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb202b715570d7615ccb2843de73c34d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.AutomationExercise.Page.HomePage.isLoggedIn(HomePage.java:31)
-	at com.AutomationExercise.Tests.TC02_LoginUser.loginUserTest(TC02_LoginUser.java:49)
+                  <div class="stack-trace">java.lang.AssertionError: User is not logged in expected [true] but found [false]
+	at com.AutomationExercise.Tests.TC02_LoginUser.loginUserTest(TC02_LoginUser.java:59)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-AutomationExerciseSuite-class-failed -->
-          <div class="suite-AutomationExerciseSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="shouldDisplayErrorForInvalidLoginCredentials">
-                  </a> <!-- shouldDisplayErrorForInvalidLoginCredentials -->
-                  <span class="method-name">shouldDisplayErrorForInvalidLoginCredentials</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationExerciseSuite-class-passed -->
           <div class="suite-AutomationExerciseSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -191,6 +168,21 @@ Session ID: cb202b715570d7615ccb2843de73c34d
                   <a name="registerUserTest">
                   </a> <!-- registerUserTest -->
                   <span class="method-name">registerUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationExerciseSuite-class-passed -->
+          <div class="suite-AutomationExerciseSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDisplayErrorForInvalidLoginCredentials">
+                  </a> <!-- shouldDisplayErrorForInvalidLoginCredentials -->
+                  <span class="method-name">shouldDisplayErrorForInvalidLoginCredentials</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -281,20 +273,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginUserTest')
 data.setCell(0, 2, 'com.AutomationExercise.Tests.TC02_LoginUser')
-data.setCell(0, 3, 23915);
+data.setCell(0, 3, 24547);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'registerUserTest')
 data.setCell(1, 2, 'com.AutomationExercise.Tests.TC01_RegisterUser')
-data.setCell(1, 3, 13124);
+data.setCell(1, 3, 10833);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'shouldDisplayErrorForInvalidLoginCredentials')
 data.setCell(2, 2, 'com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials')
-data.setCell(2, 3, 6550);
+data.setCell(2, 3, 4401);
 window.suiteTableData['AutomationExerciseSuite']= { tableData: data, tableDiv: 'times-div-AutomationExerciseSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-AutomationExerciseSuite">
               </div> <!-- times-div-AutomationExerciseSuite -->
             </div> <!-- times-div -->
@@ -313,20 +305,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials</span>
+              <span class="ignored-class-name">com.AutomationExercise.Tests.TC02_LoginUser</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setupReport</span>
-                <br/>
                 <span class="ignored-method-name">flushReport</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.AutomationExercise.Tests.TC02_LoginUser</span>
+              <span class="ignored-class-name">com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setupReport</span>
-                <br/>
                 <span class="ignored-method-name">flushReport</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -345,90 +337,90 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">268 ms</span>
+                <span class="method-start">261 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.AutomationExercise.Tests.TC01_RegisterUser.registerUserTest())</span>
-                <span class="method-start">5003 ms</span>
+                <span class="method-start">4987 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupWait</span>
-                <span class="method-start">5012 ms</span>
+                <span class="method-start">4996 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">registerUserTest</span>
-                <span class="method-start">5012 ms</span>
+                <span class="method-start">4997 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=registerUserTest status=SUCCESS method=TC01_RegisterUser.registerUserTest()[pri:1, ...)</span>
-                <span class="method-start">18142 ms</span>
+                <span class="method-start">15835 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18159 ms</span>
+                <span class="method-start">15845 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.AutomationExercise.Tests.TC02_LoginUser</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">18441 ms</span>
+                <span class="method-start">16172 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.AutomationExercise.Tests.TC02_LoginUser.loginUserTest())</span>
-                <span class="method-start">22633 ms</span>
+                <span class="method-start">20931 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupWait</span>
-                <span class="method-start">22635 ms</span>
+                <span class="method-start">20933 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginUserTest</span>
-                <span class="method-start">22636 ms</span>
+                <span class="method-start">20934 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=loginUserTest status=FAILURE method=TC02_LoginUser.loginUserTest()[pri:2, instance:...)</span>
-                <span class="method-start">46564 ms</span>
+                <span class="method-start">45486 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">46690 ms</span>
+                <span class="method-start">45615 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">46954 ms</span>
+                <span class="method-start">45882 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials.shouldDisplayErrorForInv...)</span>
-                <span class="method-start">51042 ms</span>
+                <span class="method-start">49656 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupWait</span>
-                <span class="method-start">51043 ms</span>
+                <span class="method-start">49657 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldDisplayErrorForInvalidLoginCredentials</span>
-                <span class="method-start">51044 ms</span>
+                <span class="method-start">49658 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=shouldDisplayErrorForInvalidLoginCredentials status=SUCCESS method=TC03_LoginWithIn...)</span>
-                <span class="method-start">57595 ms</span>
+                <span class="method-start">54060 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">57596 ms</span>
+                <span class="method-start">54061 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.AutomationExercise.Tests.TC01_RegisterUser</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">57871 ms</span>
+                <span class="method-start">54371 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

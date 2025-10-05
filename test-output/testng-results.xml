@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-05T18:57:03 IST" name="AutomationExerciseSuite" finished-at="2025-10-05T18:58:01 IST" duration-ms="57599">
+  <suite started-at="2025-10-05T19:46:20 IST" name="AutomationExerciseSuite" finished-at="2025-10-05T19:47:14 IST" duration-ms="54108">
     <groups>
       <group name="negative">
-        <method signature="TC03_LoginWithIncorrectCredentials.shouldDisplayErrorForInvalidLoginCredentials()[pri:3, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@5e5d171f]" name="shouldDisplayErrorForInvalidLoginCredentials" class="com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials"/>
+        <method signature="TC03_LoginWithIncorrectCredentials.shouldDisplayErrorForInvalidLoginCredentials()[pri:3, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@d29f28]" name="shouldDisplayErrorForInvalidLoginCredentials" class="com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials"/>
       </group> <!-- negative -->
       <group name="regression">
-        <method signature="TC03_LoginWithIncorrectCredentials.shouldDisplayErrorForInvalidLoginCredentials()[pri:3, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@5e5d171f]" name="shouldDisplayErrorForInvalidLoginCredentials" class="com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials"/>
+        <method signature="TC03_LoginWithIncorrectCredentials.shouldDisplayErrorForInvalidLoginCredentials()[pri:3, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@d29f28]" name="shouldDisplayErrorForInvalidLoginCredentials" class="com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="TC01_RegisterUser.registerUserTest()[pri:1, instance:com.AutomationExercise.Tests.TC01_RegisterUser@1fa121e2]" name="registerUserTest" class="com.AutomationExercise.Tests.TC01_RegisterUser"/>
-        <method signature="TC02_LoginUser.loginUserTest()[pri:2, instance:com.AutomationExercise.Tests.TC02_LoginUser@7770f470]" name="loginUserTest" class="com.AutomationExercise.Tests.TC02_LoginUser"/>
+        <method signature="TC01_RegisterUser.registerUserTest()[pri:1, instance:com.AutomationExercise.Tests.TC01_RegisterUser@67080771]" name="registerUserTest" class="com.AutomationExercise.Tests.TC01_RegisterUser"/>
+        <method signature="TC02_LoginUser.loginUserTest()[pri:2, instance:com.AutomationExercise.Tests.TC02_LoginUser@932bc4a]" name="loginUserTest" class="com.AutomationExercise.Tests.TC02_LoginUser"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-10-05T18:57:03 IST" name="AutomationExerciseTests" finished-at="2025-10-05T18:58:01 IST" duration-ms="57599">
+    <test started-at="2025-10-05T19:46:20 IST" name="AutomationExerciseTests" finished-at="2025-10-05T19:47:14 IST" duration-ms="54108">
       <class name="com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@5e5d171f]" started-at="2025-10-05T18:57:50 IST" name="setUp" finished-at="2025-10-05T18:57:54 IST" duration-ms="4087" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@d29f28]" started-at="2025-10-05T19:47:06 IST" name="setUp" finished-at="2025-10-05T19:47:10 IST" duration-ms="3773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@5e5d171f]" started-at="2025-10-05T18:57:54 IST" name="startTest" finished-at="2025-10-05T18:57:54 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@d29f28]" started-at="2025-10-05T19:47:10 IST" name="startTest" finished-at="2025-10-05T19:47:10 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,40 +32,40 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="setupWait()[pri:0, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@5e5d171f]" started-at="2025-10-05T18:57:54 IST" name="setupWait" finished-at="2025-10-05T18:57:54 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupWait()[pri:0, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@d29f28]" started-at="2025-10-05T19:47:10 IST" name="setupWait" finished-at="2025-10-05T19:47:10 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupWait -->
-        <test-method signature="shouldDisplayErrorForInvalidLoginCredentials()[pri:3, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@5e5d171f]" started-at="2025-10-05T18:57:54 IST" name="shouldDisplayErrorForInvalidLoginCredentials" finished-at="2025-10-05T18:58:01 IST" duration-ms="6550" status="PASS">
+        <test-method signature="shouldDisplayErrorForInvalidLoginCredentials()[pri:3, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@d29f28]" started-at="2025-10-05T19:47:10 IST" name="shouldDisplayErrorForInvalidLoginCredentials" finished-at="2025-10-05T19:47:14 IST" duration-ms="4401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldDisplayErrorForInvalidLoginCredentials -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@5e5d171f]" started-at="2025-10-05T18:58:01 IST" name="captureResult" finished-at="2025-10-05T18:58:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@d29f28]" started-at="2025-10-05T19:47:14 IST" name="captureResult" finished-at="2025-10-05T19:47:14 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=shouldDisplayErrorForInvalidLoginCredentials status=SUCCESS method=TC03_LoginWithIncorrectCredentials.shouldDisplayErrorForInvalidLoginCredentials()[pri:3, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@5e5d171f] output={null}]]]>
+                <![CDATA[[TestResult name=shouldDisplayErrorForInvalidLoginCredentials status=SUCCESS method=TC03_LoginWithIncorrectCredentials.shouldDisplayErrorForInvalidLoginCredentials()[pri:3, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@d29f28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@5e5d171f]" started-at="2025-10-05T18:58:01 IST" name="tearDown" finished-at="2025-10-05T18:58:01 IST" duration-ms="248" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@d29f28]" started-at="2025-10-05T19:47:14 IST" name="tearDown" finished-at="2025-10-05T19:47:14 IST" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials -->
       <class name="com.AutomationExercise.Tests.TC01_RegisterUser">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.AutomationExercise.Tests.TC01_RegisterUser@1fa121e2]" started-at="2025-10-05T18:57:03 IST" name="setupReport" finished-at="2025-10-05T18:57:03 IST" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.AutomationExercise.Tests.TC01_RegisterUser@67080771]" started-at="2025-10-05T19:46:20 IST" name="setupReport" finished-at="2025-10-05T19:46:20 IST" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.AutomationExercise.Tests.TC01_RegisterUser@1fa121e2]" started-at="2025-10-05T18:57:03 IST" name="setUp" finished-at="2025-10-05T18:57:08 IST" duration-ms="4717" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.AutomationExercise.Tests.TC01_RegisterUser@67080771]" started-at="2025-10-05T19:46:20 IST" name="setUp" finished-at="2025-10-05T19:46:25 IST" duration-ms="4711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.AutomationExercise.Tests.TC01_RegisterUser@1fa121e2]" started-at="2025-10-05T18:57:08 IST" name="startTest" finished-at="2025-10-05T18:57:08 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.AutomationExercise.Tests.TC01_RegisterUser@67080771]" started-at="2025-10-05T19:46:25 IST" name="startTest" finished-at="2025-10-05T19:46:25 IST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -76,40 +76,40 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="registerUserTest()[pri:1, instance:com.AutomationExercise.Tests.TC01_RegisterUser@1fa121e2]" started-at="2025-10-05T18:57:08 IST" name="registerUserTest" finished-at="2025-10-05T18:57:21 IST" duration-ms="13124" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerUserTest -->
-        <test-method is-config="true" signature="setupWait()[pri:0, instance:com.AutomationExercise.Tests.TC01_RegisterUser@1fa121e2]" started-at="2025-10-05T18:57:08 IST" name="setupWait" finished-at="2025-10-05T18:57:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupWait()[pri:0, instance:com.AutomationExercise.Tests.TC01_RegisterUser@67080771]" started-at="2025-10-05T19:46:25 IST" name="setupWait" finished-at="2025-10-05T19:46:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupWait -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.AutomationExercise.Tests.TC01_RegisterUser@1fa121e2]" started-at="2025-10-05T18:57:21 IST" name="captureResult" finished-at="2025-10-05T18:57:21 IST" duration-ms="11" status="PASS">
+        <test-method signature="registerUserTest()[pri:1, instance:com.AutomationExercise.Tests.TC01_RegisterUser@67080771]" started-at="2025-10-05T19:46:25 IST" name="registerUserTest" finished-at="2025-10-05T19:46:36 IST" duration-ms="10833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserTest -->
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.AutomationExercise.Tests.TC01_RegisterUser@67080771]" started-at="2025-10-05T19:46:36 IST" name="captureResult" finished-at="2025-10-05T19:46:36 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=registerUserTest status=SUCCESS method=TC01_RegisterUser.registerUserTest()[pri:1, instance:com.AutomationExercise.Tests.TC01_RegisterUser@1fa121e2] output={null}]]]>
+                <![CDATA[[TestResult name=registerUserTest status=SUCCESS method=TC01_RegisterUser.registerUserTest()[pri:1, instance:com.AutomationExercise.Tests.TC01_RegisterUser@67080771] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.AutomationExercise.Tests.TC01_RegisterUser@1fa121e2]" started-at="2025-10-05T18:57:21 IST" name="tearDown" finished-at="2025-10-05T18:57:22 IST" duration-ms="280" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.AutomationExercise.Tests.TC01_RegisterUser@67080771]" started-at="2025-10-05T19:46:36 IST" name="tearDown" finished-at="2025-10-05T19:46:36 IST" duration-ms="324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.AutomationExercise.Tests.TC01_RegisterUser@1fa121e2]" started-at="2025-10-05T18:58:01 IST" name="flushReport" finished-at="2025-10-05T18:58:01 IST" duration-ms="299" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.AutomationExercise.Tests.TC01_RegisterUser@67080771]" started-at="2025-10-05T19:47:14 IST" name="flushReport" finished-at="2025-10-05T19:47:15 IST" duration-ms="428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
       </class> <!-- com.AutomationExercise.Tests.TC01_RegisterUser -->
       <class name="com.AutomationExercise.Tests.TC02_LoginUser">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.AutomationExercise.Tests.TC02_LoginUser@7770f470]" started-at="2025-10-05T18:57:22 IST" name="setUp" finished-at="2025-10-05T18:57:26 IST" duration-ms="4191" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.AutomationExercise.Tests.TC02_LoginUser@932bc4a]" started-at="2025-10-05T19:46:36 IST" name="setUp" finished-at="2025-10-05T19:46:41 IST" duration-ms="4758" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.AutomationExercise.Tests.TC02_LoginUser@7770f470]" started-at="2025-10-05T18:57:26 IST" name="startTest" finished-at="2025-10-05T18:57:26 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.AutomationExercise.Tests.TC02_LoginUser@932bc4a]" started-at="2025-10-05T19:46:41 IST" name="startTest" finished-at="2025-10-05T19:46:41 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -120,31 +120,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="setupWait()[pri:0, instance:com.AutomationExercise.Tests.TC02_LoginUser@7770f470]" started-at="2025-10-05T18:57:26 IST" name="setupWait" finished-at="2025-10-05T18:57:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupWait()[pri:0, instance:com.AutomationExercise.Tests.TC02_LoginUser@932bc4a]" started-at="2025-10-05T19:46:41 IST" name="setupWait" finished-at="2025-10-05T19:46:41 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupWait -->
-        <test-method signature="loginUserTest()[pri:2, instance:com.AutomationExercise.Tests.TC02_LoginUser@7770f470]" started-at="2025-10-05T18:57:26 IST" name="loginUserTest" finished-at="2025-10-05T18:57:50 IST" duration-ms="23915" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="loginUserTest()[pri:2, instance:com.AutomationExercise.Tests.TC02_LoginUser@932bc4a]" started-at="2025-10-05T19:46:41 IST" name="loginUserTest" finished-at="2025-10-05T19:47:06 IST" duration-ms="24547" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(text(),'Logged in as')] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\sree\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56488/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb202b715570d7615ccb2843de73c34d]]>
+              <![CDATA[User is not logged in expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(text(),'Logged in as')] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\sree\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56488/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb202b715570d7615ccb2843de73c34d
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.AutomationExercise.Page.HomePage.isLoggedIn(HomePage.java:31)
-at com.AutomationExercise.Tests.TC02_LoginUser.loginUserTest(TC02_LoginUser.java:49)
+              <![CDATA[java.lang.AssertionError: User is not logged in expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.AutomationExercise.Tests.TC02_LoginUser.loginUserTest(TC02_LoginUser.java:59)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -173,22 +163,22 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUserTest -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.AutomationExercise.Tests.TC02_LoginUser@7770f470]" started-at="2025-10-05T18:57:50 IST" name="captureResult" finished-at="2025-10-05T18:57:50 IST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.AutomationExercise.Tests.TC02_LoginUser@932bc4a]" started-at="2025-10-05T19:47:06 IST" name="captureResult" finished-at="2025-10-05T19:47:06 IST" duration-ms="129" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginUserTest status=FAILURE method=TC02_LoginUser.loginUserTest()[pri:2, instance:com.AutomationExercise.Tests.TC02_LoginUser@7770f470] output={null}]]]>
+                <![CDATA[[TestResult name=loginUserTest status=FAILURE method=TC02_LoginUser.loginUserTest()[pri:2, instance:com.AutomationExercise.Tests.TC02_LoginUser@932bc4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.AutomationExercise.Tests.TC02_LoginUser@7770f470]" started-at="2025-10-05T18:57:50 IST" name="tearDown" finished-at="2025-10-05T18:57:50 IST" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.AutomationExercise.Tests.TC02_LoginUser@932bc4a]" started-at="2025-10-05T19:47:06 IST" name="tearDown" finished-at="2025-10-05T19:47:06 IST" duration-ms="266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

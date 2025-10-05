@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AccountCreatedPage extends baseTest {
 	
-	@SuppressWarnings("unused")
+	@SuppressWarnings("unused")		
     private WebDriver driver;
     private WebDriverWait wait;
 

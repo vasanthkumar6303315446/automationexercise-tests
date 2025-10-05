@@ -5,11 +5,11 @@
     <classes>
       <class name="com.AutomationExercise.Tests.TC02_LoginUser">
         <methods>
-          <include name="loginUserTest"/>
           <include name="setUp"/>
+          <include name="loginUserTest"/>
           <include name="setupReport"/>
-          <include name="flushReport"/>
           <include name="setupWait"/>
+          <include name="flushReport"/>
           <include name="startTest"/>
           <include name="tearDown"/>
           <include name="captureResult"/>

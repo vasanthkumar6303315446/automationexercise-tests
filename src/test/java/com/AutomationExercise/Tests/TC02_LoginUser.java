@@ -49,7 +49,7 @@ public class TC02_LoginUser extends baseTest {
             loginPage.enterEmail(email);
             loginPage.enterPassword(password);
             test.get().info("Entered login credentials");
-            log.info("Entered email: {} and password: {}", email, "********");
+            log.info("Entered email: {} and password: {}", email, "katikutivasanthkumar@gmail.com",password,"Vasanth@1");
 
             loginPage.clickLogin();
             test.get().info("Clicked Login button");

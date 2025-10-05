@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 05 18:57:03 IST 2025</td>
+<td>Started on:</td><td>Sun Oct 05 19:46:20 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>57 seconds (57599 ms)</td>
+<tr><td>Total time:</td><td>54 seconds (54108 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,28 +77,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.AutomationExercise.Tests.TC02_LoginUser.loginUserTest()'><b>loginUserTest</b><br>Test class: com.AutomationExercise.Tests.TC02_LoginUser</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(text(),&apos;Logged in as&apos;)] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\sree\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56488/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb202b715570d7615ccb2843de73c34d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.AutomationExercise.Page.HomePage.isLoggedIn(HomePage.java:31)
-	at com.AutomationExercise.Tests.TC02_LoginUser.loginUserTest(TC02_LoginUser.java:49)
+<td><div><pre>java.lang.AssertionError: User is not logged in expected [true] but found [false]
+	at com.AutomationExercise.Tests.TC02_LoginUser.loginUserTest(TC02_LoginUser.java:59)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2058569241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2058569241'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(text(),&apos;Logged in as&apos;)] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\sree\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56488/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb202b715570d7615ccb2843de73c34d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.AutomationExercise.Page.HomePage.isLoggedIn(HomePage.java:31)
-	at com.AutomationExercise.Tests.TC02_LoginUser.loginUserTest(TC02_LoginUser.java:49)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1088628578", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1088628578'><pre>java.lang.AssertionError: User is not logged in expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.AutomationExercise.Tests.TC02_LoginUser.loginUserTest(TC02_LoginUser.java:59)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -126,8 +113,8 @@ Session ID: cb202b715570d7615ccb2843de73c34d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>23</td>
-<td>com.AutomationExercise.Tests.TC02_LoginUser@7770f470</td></tr>
+<td>24</td>
+<td>com.AutomationExercise.Tests.TC02_LoginUser@932bc4a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -138,15 +125,15 @@ Session ID: cb202b715570d7615ccb2843de73c34d
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials.shouldDisplayErrorForInvalidLoginCredentials()'><b>shouldDisplayErrorForInvalidLoginCredentials</b><br>Test class: com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials</td>
-<td></td>
-<td>6</td>
-<td>com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@5e5d171f</td></tr>
-<tr>
 <td title='com.AutomationExercise.Tests.TC01_RegisterUser.registerUserTest()'><b>registerUserTest</b><br>Test class: com.AutomationExercise.Tests.TC01_RegisterUser</td>
 <td></td>
-<td>13</td>
-<td>com.AutomationExercise.Tests.TC01_RegisterUser@1fa121e2</td></tr>
+<td>10</td>
+<td>com.AutomationExercise.Tests.TC01_RegisterUser@67080771</td></tr>
+<tr>
+<td title='com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials.shouldDisplayErrorForInvalidLoginCredentials()'><b>shouldDisplayErrorForInvalidLoginCredentials</b><br>Test class: com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials</td>
+<td></td>
+<td>4</td>
+<td>com.AutomationExercise.Tests.TC03_LoginWithIncorrectCredentials@d29f28</td></tr>
 </table><p>
 </body>
 </html>
